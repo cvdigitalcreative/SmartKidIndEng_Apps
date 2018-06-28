@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/quiz_background"
+    android:layout_marginTop="-20dp"
+    tools:context="com.digitalcreative.smartkidsindeng.Fragment.Kuis_frag">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/quiz_img_size"
+            android:layout_height="@dimen/quiz_img_size"
+            android:background="@mipmap/icon_round"
+            android:layout_margin="40px"
+            />
+        <TextView
+            android:textColor="@color/quiz_textcolor"
+            android:id="@+id/soal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="40px"
+            android:layout_margin="10px"
+            android:text="Pertanyaan yang akan di random" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+                <RadioButton
+                    android:textColor="@color/quiz_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawab1"/>
+
+                <RadioButton
+                    android:textColor="@color/quiz_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawab2"/>
+
+                <RadioButton
+                    android:textColor="@color/quiz_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawab3"/>
+
+                <RadioButton
+                    android:textColor="@color/quiz_textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawab4"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px">
+        <Button
+            android:id="@+id/btn_NextKuis"
+            android:layout_width="300px"
+            android:layout_height="150px"
+            android:background="@drawable/btn_selanjutnya"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/quiz_background"
+    tools:context="com.digitalcreative.smartkidsindeng.Fragment.Score_frag">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score Kuis Kamu adalah"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="60px"
+            android:layout_margin="10px"
+            android:padding="16px"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30px"
+                android:textColor="#fff"
+                android:textSize="220px"
+                android:gravity="center"
+                android:text="000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10px">
+            <Button
+                android:id="@+id/btn_backscore"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_kembali"/>
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exit"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

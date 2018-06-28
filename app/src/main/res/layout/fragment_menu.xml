@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/menu_submenua3"
+    tools:context="com.digitalcreative.smartkidsindeng.Fragment.MenuFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:layout_marginBottom="-10dp"
+            android:id="@+id/btn_hewan"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_hewan"/>
+        <Button
+            android:layout_marginBottom="-10dp"
+            android:id="@+id/btn_huruf"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_huruf"/>
+        <Button
+            android:layout_marginBottom="-10dp"
+            android:id="@+id/btn_angka"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_angka"/>
+        <Button
+            android:layout_marginBottom="-10dp"
+            android:id="@+id/btn_anggota_tubuh"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_anggota_tubuh"/>
+        <Button
+            android:layout_marginBottom="-10dp"
+            android:id="@+id/btn_benda"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_benda"/>
+        <Button
+            android:id="@+id/btn_Kuis_Pertanyaan"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_kuis"/>
+    </LinearLayout>
+</LinearLayout>

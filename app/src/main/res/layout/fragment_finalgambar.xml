@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/menu_submenua3"
+    tools:context="com.digitalcreative.smartkidsindeng.Fragment.Finalgambar_Frag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/backpng"
+            />
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_final"
+                android:layout_width="600px"
+                android:layout_height="600px"
+                android:background="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:id="@+id/txt_bahasaindonesia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indoensia"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:background="#ffff"
+                android:padding="4dp"/>
+            <Button
+                android:id="@+id/btn_suarainggris"
+                android:layout_width="360px"
+                android:layout_height="180px"
+                android:background="@drawable/btn_suara"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_bahasainggris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Inggris"
+                android:textColor="#000"
+                android:background="#ffff"
+                android:padding="4dp"/>
+            <Button
+                android:id="@+id/btn_suaraindo"
+                android:layout_width="360px"
+                android:layout_height="180px"
+                android:background="@drawable/btn_suara"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="bottom">-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_kembali"-->
+            <!--android:layout_gravity="bottom|left"-->
+            <!--android:layout_width="350px"-->
+            <!--android:layout_height="150px"-->
+            <!--android:background="@drawable/btn_kembali"/>-->
+    <!--</LinearLayout>-->
+</FrameLayout>
