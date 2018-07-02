@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.digitalcreative.smartkidsindeng.Fragment.MenuFragment;
+import com.digitalcreative.smartkidsindeng.Entity.MenuFragment;
 
 public class StartActivity extends AppCompatActivity {
 

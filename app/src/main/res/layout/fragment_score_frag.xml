@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/quiz_background"
-    tools:context="com.digitalcreative.smartkidsindeng.Fragment.Score_frag">
+    tools:context="com.digitalcreative.smartkidsindeng.Controler.Score_frag">
 
     <include
         android:id="@+id/toolbar"
