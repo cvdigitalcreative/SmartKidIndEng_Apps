@@ -75,41 +75,27 @@ public class Kuis_frag extends Fragment {
         }
 
         //Fill the Question and Answer
-        fillInQuestion();
+        fillInQuestion1();
+        posisiPertanyaan++;
 
         //Button next clicked
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int selectedId = ansRadioGroup.getCheckedRadioButtonId();
-                int maxsoal = 2;
+                int maxsoal = 4;
                 String jawaban_user = ((RadioButton) ansRadioGroup.findViewById(selectedId)).getText().toString();
-                for (int i = 0; i < maxsoal; i++) {
-                        if (jawaban[i].equals(jawaban_user)){
+                    for (int i = 0; i < maxsoal; i++){
+                        if (jawaban_user.equals(jawaban[i])) {
                             Bscore = Bscore + 10;
+                        }
+                    }
+                    for (int i = 0; i < maxsoal; i++) {
                             if (maxsoal > posisiPertanyaan) {
                                 //Fill the Question and Answer - update method
-                                fillInQuestion_update();
-                            } else {
-                                //Passing Data
-                                Bundle bundle = new Bundle();
-                                bundle.putInt("score", Bscore);
-                                score_frag = new Score_frag();
-                                score_frag.setArguments(bundle);
-
-                                //Fragment Transition
-                                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                                fragmentTransaction.replace(R.id.container, score_frag);
-                                fragmentTransaction.addToBackStack(null);
-                                fragmentTransaction.commit();
+                                fillInQuestion1();
                             }
-                    } else {
-                            Bscore = Bscore + 0;
-                            if (maxsoal > posisiPertanyaan) {
-                                //Fill the Question and Answer - update method
-                                fillInQuestion_update();
-                            } else {
-                                //Passing Data
+                         else {
                                 Bundle bundle = new Bundle();
                                 bundle.putInt("score", Bscore);
                                 score_frag = new Score_frag();
@@ -122,33 +108,16 @@ public class Kuis_frag extends Fragment {
                                 fragmentTransaction.commit();
                             }
                     }
-                    System.out.println(posisiPertanyaan);
-                }
                 posisiPertanyaan++;
-                System.out.println(Bscore);
-            }
+                    System.out.println(posisiPertanyaan);
+                    System.out.println(Bscore);
+                }
         });
         return view;
-    }
+        }
 
-    private void fillInQuestion() {
+    private void fillInQuestion1() {
         QnA_Model qnA_model = quiz.get(posisiPertanyaan);
-        pertanyaanTexview.setText(qnA_model.pertanyaan);
-
-        //Set semua jawaban
-        int count = ansRadioGroup.getChildCount();
-        for (int j = 0; j < count; j++)
-            ((RadioButton) ansRadioGroup.getChildAt(j)).setText(qnA_model.semuaJawaban.get(j));
-
-        // Restore selected answer if exists otherwise clear previous question's choice
-        if(qnA_model.selectedId > -1)
-            ansRadioGroup.check(qnA_model.selectedId);
-        else
-            ansRadioGroup.clearCheck();
-    }
-
-    private void fillInQuestion_update() {
-        QnA_Model qnA_model = quiz.get(posisiPertanyaan+1);
         pertanyaanTexview.setText(qnA_model.pertanyaan);
 
         //Set semua jawaban
