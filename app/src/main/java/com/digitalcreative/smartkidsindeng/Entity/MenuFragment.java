@@ -1,6 +1,8 @@
 package com.digitalcreative.smartkidsindeng.Entity;
 
 
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -20,7 +22,7 @@ import com.digitalcreative.smartkidsindeng.R;
  */
 public class MenuFragment extends Fragment {
 
-    Button btnhewan, btnhuruf, btnangka, btnanggota_tubuh, btnbenda, btnkuis;
+    Button btnhewan, btnhuruf, btnangka, btnanggota_tubuh, btnbenda, btnkuis, btntransport, btnwarna;
     Pilihgambar_Frag pilihgambar_frag;
     Kuis_frag kuis_frag;
 
@@ -42,6 +44,9 @@ public class MenuFragment extends Fragment {
         btnanggota_tubuh = view.findViewById(R.id.btn_anggota_tubuh);
         btnbenda = view.findViewById(R.id.btn_benda);
         btnkuis = view.findViewById(R.id.btn_Kuis_Pertanyaan);
+        btntransport = view.findViewById(R.id.btn_transportasi);
+        btnwarna = view.findViewById(R.id.btn_warna);
+
         TextView toolbar_text =  view.findViewById(R.id.text_toolbar);
         Toolbar mToolbar = getActivity().findViewById(R.id.toolbar);
 
@@ -54,6 +59,8 @@ public class MenuFragment extends Fragment {
         fragAngka();
         fragAnggotatubuh();
         fragBenda();
+        fragTransportasi();
+        fragWarna();
         fragKuis();
         return view;
     }
@@ -168,5 +175,41 @@ public class MenuFragment extends Fragment {
             }
         });
 
+    }
+
+    public void fragTransportasi() {
+        btntransport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                int id = 7;
+                bundle.putInt("id", id);
+                pilihgambar_frag = new Pilihgambar_Frag();
+                pilihgambar_frag.setArguments(bundle);
+
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.container, pilihgambar_frag);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+    }
+
+    public void fragWarna() {
+        btnwarna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                int id = 8;
+                bundle.putInt("id", id);
+                pilihgambar_frag = new Pilihgambar_Frag();
+                pilihgambar_frag.setArguments(bundle);
+
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.container, pilihgambar_frag);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
     }
 }

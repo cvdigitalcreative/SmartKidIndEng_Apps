@@ -50,9 +50,9 @@
                 android:background="@drawable/btn_kembali"/>
             <Button
                 android:id="@+id/btn_exit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="exit"/>
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_exit"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -360,6 +360,69 @@ public class Pilihgambar_Frag extends Fragment {
                 //menset adapter listviewAdapter ke dalam recycle view
                 recyclerView.setAdapter(listviewAdapter);
                 break;
+
+            case 7:
+                //Set Toolbar
+                AppCompatActivity activity7 = (AppCompatActivity) getActivity();
+                activity7.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                btn_back.setOnClickListener(hitbutton);
+
+                //Adding data Transportasi
+                modelList.add(new Model(R.mipmap.transportasi_ambulance, "Angka Nol", "transportasi_ambulance"));
+                modelList.add(new Model(R.mipmap.transportasi_baloonudara, "Angka_satu", "transportasi_baloonudara"));
+                modelList.add(new Model(R.mipmap.transportasi_becak, "Angka_dua", "transportasi_becak"));
+                modelList.add(new Model(R.mipmap.transportasi_bus, "Angka_tiga", "transportasi_bus"));
+                modelList.add(new Model(R.mipmap.transportasi_gerobak, "Angka_empat", "transportasi_gerobak"));
+                modelList.add(new Model(R.mipmap.transportasi_helikopter, "Angka_lima", "transportasi_helikopter"));
+                modelList.add(new Model(R.mipmap.transportasi_jet, "Angka_enam", "transportasi_jet"));
+                modelList.add(new Model(R.mipmap.transportasi_kapal, "Angka_tujuh", "transportasi_kapal"));
+                modelList.add(new Model(R.mipmap.transportasi_kapalselam, "Angka_delapan", "transportasi_kapalselam"));
+                modelList.add(new Model(R.mipmap.transportasi_keretaapi, "Angka_sembilan", "transportasi_keretaapi"));
+                modelList.add(new Model(R.mipmap.transportasi_motor, "Angka_sembilan", "transportasi_motor"));
+                modelList.add(new Model(R.mipmap.transportasi_mobil, "Angka_sepuluh", "transportasi_mobil"));
+                modelList.add(new Model(R.mipmap.transportasi_pesawat, "Angka Nol", "transportasi_pesawat"));
+                modelList.add(new Model(R.mipmap.transportasi_sepeda, "Angka_satu", "transportasi_sepeda"));
+                modelList.add(new Model(R.mipmap.transportasi_skuter, "Angka_dua", "transportasi_skuter"));
+                modelList.add(new Model(R.mipmap.transportasi_taksi, "Angka_tiga", "transportasi_taksi"));
+                modelList.add(new Model(R.mipmap.transportasi_tank, "Angka_empat", "transportasi_tank"));
+                modelList.add(new Model(R.mipmap.transportasi_traktor, "Angka_lima", "transportasi_traktor"));
+                modelList.add(new Model(R.mipmap.transportasi_truk, "Angka_enam", "transportasi_truk"));
+
+                //creating the list adapter
+                listviewAdapter = new ListviewAdapter(modelList);
+                //menset adapter listviewAdapter ke dalam recycle view
+                recyclerView.setAdapter(listviewAdapter);
+                break;
+
+            case 8:
+                //Set Toolbar
+                AppCompatActivity activity8 = (AppCompatActivity) getActivity();
+                activity8.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                btn_back.setOnClickListener(hitbutton);
+
+                //Adding data Warna
+                modelList.add(new Model(R.mipmap.warna_abu, "Angka Nol", "warna_abu"));
+                modelList.add(new Model(R.mipmap.warna_birudonker, "Angka_satu", "warna_birudonker"));
+                modelList.add(new Model(R.mipmap.warna_birulaut, "Angka_dua", "warna_birulaut"));
+                modelList.add(new Model(R.mipmap.warna_emas, "Angka_tiga", "warna_emas"));
+                modelList.add(new Model(R.mipmap.warna_hijau, "Angka_empat", "warna_hijau"));
+                modelList.add(new Model(R.mipmap.warna_hitam, "Angka_lima", "warna_hitam"));
+                modelList.add(new Model(R.mipmap.warna_kuning, "Angka_enam", "warna_kuning"));
+                modelList.add(new Model(R.mipmap.warna_merahmarun, "Angka_tujuh", "warna_merahmarun"));
+                modelList.add(new Model(R.mipmap.warna_oranye, "Angka_delapan", "warna_oranye"));
+                modelList.add(new Model(R.mipmap.warna_pink, "Angka_sembilan", "warna_pink"));
+                modelList.add(new Model(R.mipmap.warna_putih, "Angka_sepuluh", "warna_putih"));
+                modelList.add(new Model(R.mipmap.warna_ungu, "Angka Nol", "warna_ungu"));
+                modelList.add(new Model(R.mipmap.warna_violet, "Angka_satu", "warna_violet"));
+                modelList.add(new Model(R.mipmap.warna_zaitun, "Angka_dua", "warna_zaitun"));
+
+                //creating the list adapter
+                listviewAdapter = new ListviewAdapter(modelList);
+                //menset adapter listviewAdapter ke dalam recycle view
+                recyclerView.setAdapter(listviewAdapter);
+                break;
             }
 
         return view;

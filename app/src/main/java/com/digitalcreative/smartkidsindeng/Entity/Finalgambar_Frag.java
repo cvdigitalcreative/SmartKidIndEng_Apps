@@ -6312,6 +6312,940 @@ public class Finalgambar_Frag extends Fragment {
                     }
                 });
             }
+// ==================================================================================
+// =================================== Part Transportasi ============================
+// ==================================================================================
+            else if (getFinalKode.equals("transportasi_ambulance")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_ambulance);
+                indo.setText("Ambulance");
+                inggris.setText("Ambulance");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind1);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng1);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_baloonudara")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_baloonudara);
+                indo.setText("Balon Udara");
+                inggris.setText("Air Balloon");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind2);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng2);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_becak")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_ambulance);
+                indo.setText("Becak");
+                inggris.setText("Rickshaw");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind3);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng3);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_bus")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_bus);
+                indo.setText("Bus");
+                inggris.setText("Bus");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind4);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng4);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_gerobak")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_gerobak);
+                indo.setText("Gerobak");
+                inggris.setText("Cart");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind5);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng5);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_helikopter")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_helikopter);
+                indo.setText("Helikopter");
+                inggris.setText("Helicopter");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind6);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng6);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_jet")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_jet);
+                indo.setText("Pesawat Jet");
+                inggris.setText("Jet");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind11);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng11);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_kapal")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_kapal);
+                indo.setText("Kapal Fery");
+                inggris.setText("Ferry");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind8);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng8);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_kapalselam")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_kapalselam);
+                indo.setText("Kapal Selam");
+                inggris.setText("Kapal Selam");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind7);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng7);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_keretaapi")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_keretaapi);
+                indo.setText("Kereta Api");
+                inggris.setText("Train");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind9);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.bnd_eng9);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_mobil")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_mobil);
+                indo.setText("Mobil");
+                inggris.setText("Car");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind10);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng10);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_motor")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_motor);
+                indo.setText("Sepeda Motor");
+                inggris.setText("Motorcycle");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind13);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng13);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_pesawat")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_mobil);
+                indo.setText("Pesawat");
+                inggris.setText("Airplane");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind12);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng12);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_sepeda")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_sepeda);
+                indo.setText("Sepeda");
+                inggris.setText("Bike");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind14);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng14);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_skuter")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_skuter);
+                indo.setText("Skuter");
+                inggris.setText("Scooter");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind15);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng15);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_taksi")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_taksi);
+                indo.setText("Taksi");
+                inggris.setText("Taxi");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind16);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng16);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_tank")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_tank);
+                indo.setText("Tank");
+                inggris.setText("Tank");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind17);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng17);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_traktor")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_traktor);
+                indo.setText("Traktor");
+                inggris.setText("Tractor");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind18);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng18);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("transportasi_truk")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Transportasi");
+                Buttonclicked(view, 7);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.transportasi_truk);
+                indo.setText("Truk");
+                inggris.setText("Truck");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_ind19);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.trans_eng19);
+                        mp_id.start();
+                    }
+                });
+            }
+
+// ==================================================================================
+// =================================== Part Warna ===================================
+// ==================================================================================
+            else if (getFinalKode.equals("warna_abu")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_abu);
+                indo.setText("Abu-abu");
+                inggris.setText("Grey");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind1);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng1);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_birudonker")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_birudonker);
+                indo.setText("Biru Donker");
+                inggris.setText("Navy Blue");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind3);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng3);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_birulaut")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_birulaut);
+                indo.setText("Biru");
+                inggris.setText("Blue");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind4);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng4);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_emas")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_emas);
+                indo.setText("Emas");
+                inggris.setText("Gold");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind6);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng6);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_hijau")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_hijau);
+                indo.setText("Hijau");
+                inggris.setText("Green");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind7);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng7);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_hitam")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_hitam);
+                indo.setText("Hitam");
+                inggris.setText("Black");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind8);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng8);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_kuning")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_abu);
+                indo.setText("Kuning");
+                inggris.setText("Yellow");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind9);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng9);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_merahmarun")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_abu);
+                indo.setText("Merah Marun");
+                inggris.setText("Red");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind10);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng10);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_oranye")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_oranye);
+                indo.setText("Oranye");
+                inggris.setText("Orange");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind12);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng12);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_pink")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_pink);
+                indo.setText("Merah Muda");
+                inggris.setText("Pink");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind13);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng13);
+                        mp_id.start();
+                    }
+                });
+            }  else if (getFinalKode.equals("warna_putih")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_putih);
+                indo.setText("Putih");
+                inggris.setText("White");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind14);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng14);
+                        mp_id.start();
+                    }
+                });
+            } else if (getFinalKode.equals("warna_ungu")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_ungu);
+                indo.setText("Ungu");
+                inggris.setText("Purple");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind15);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng15);
+                        mp_id.start();
+                    }
+                });
+            //}
+//            else if (getFinalKode.equals("warna_violet")){
+//                // Set Toolbar
+//                AppCompatActivity activity = (AppCompatActivity) getActivity();
+//                activity.setSupportActionBar(mToolbar);
+//                toolbar_text.setText("Warna");
+//                Buttonclicked(view, 8);
+//
+//                //Set Image, Text Indo dan Eng
+//                imageView.setImageResource(R.mipmap.warna_violet);
+//                indo.setText("Violet");
+//                inggris.setText("White");
+//
+//                //Set Suara indo dan Eng
+//                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind1);
+//                        mp_id.start();
+//                    }
+//                });
+//
+//                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng1);
+//                        mp_id.start();
+//                    }
+//                });
+            } else if (getFinalKode.equals("warna_zaitun")){
+                // Set Toolbar
+                AppCompatActivity activity = (AppCompatActivity) getActivity();
+                activity.setSupportActionBar(mToolbar);
+                toolbar_text.setText("Warna");
+                Buttonclicked(view, 8);
+
+                //Set Image, Text Indo dan Eng
+                imageView.setImageResource(R.mipmap.warna_zaitun);
+                indo.setText("Zaitun");
+                inggris.setText("Olive");
+
+                //Set Suara indo dan Eng
+                btn_suara_indo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_ind16);
+                        mp_id.start();
+                    }
+                });
+
+                btn_suara_inggris.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        MediaPlayer mp_id =  MediaPlayer.create(Finalgambar_Frag.this.getActivity(), R.raw.warna_eng16);
+                        mp_id.start();
+                    }
+                });
+            }
         return view;
     }
 

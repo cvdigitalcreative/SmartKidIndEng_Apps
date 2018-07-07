@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -31,6 +32,7 @@ public class Kuis_frag extends Fragment {
 
     RadioGroup ansRadioGroup;
     TextView pertanyaanTexview;
+    ImageView gambarpertanyaan;
 
     int posisiPertanyaan = 0;
     int Bscore = 0;
@@ -54,15 +56,30 @@ public class Kuis_frag extends Fragment {
         toolbar_text.setText("Kuis");
 
         //Declare
-        final String[] pertanyaan = {"Apa nama hewan berkaki 2? ayam", "Angka Berapa ini? 10", "Apa nama buah ini? jeruk", "Angka Berapa ini? 8"};
-        final String[] jawaban = {"Ayam", "Sepuluh", "Jeruk", "Delapan"};
-        String[] pengacau = {"Semut", "Jerapah", "Kuda",
-                             "Satu", "Dua", "Sembilan",
-                             "Semangka", "Anggur", "Pepaya",
-                             "Enam", "Satu", "Lima"};
+        final int[] arrayimage = {R.mipmap.a_satu,R.mipmap.a_sepuluh,R.mipmap.hwn_kucing,R.mipmap.a_tiga,R.mipmap.transportasi_mobil,
+                R.mipmap.warna_hijau, R.mipmap.agt_hidung,R.mipmap.bda_tempattidur,R.mipmap.agt_kaki,R.mipmap.h_y};
+
+        final String[] pertanyaan = {"Angka Berapakah Ini?", "Angka Berapakah Ini?", "Apa Nama Hewan Ini?", "Berapakah Jumlah 2 + 1 = ... ?",
+                "Apakah Nama Transportasi Beroda Empat Ini?", "Warna Apakah Ini?", "Apakah Nama Anggota Tubuh Ini?", "Manakah Benda Untuk Kita Beristirahat?",
+        "Manusia Mempunyai Dua...", "Huruf Apakah Ini?"};
+
+        final String[] jawaban = {"Satu", "Sepuluh", "Kucing", "Tiga",
+                "Mobil", "Hijau", "Hidung", "Tempat Tidur", "Kaki", "Y"};
+
+        String[] pengacau = {"Tiga", "Lima", "Dua",
+                             "Empat", "Dua", "Sembilan",
+                             "Kambing", "Anjing", "Kerbau",
+                             "Lima", "Delapan", "Enam",
+                             "Sepeda", "Pesawat", "Becak",
+                             "Merah", "Kuning", "Biru",
+                "Tangan", "Kaki", "Telinga",
+                "Panci", "Gitar", "Sepeda",
+                "Gigi", "Jari", "Hidung",
+                "D", "X", "G"};
         final ArrayList<String> listpengacau = new ArrayList<>(Arrays.asList(pengacau));
 
         //Init
+        gambarpertanyaan = view.findViewById(R.id.pertanyaan_gambar);
         Button btn_next = view.findViewById(R.id.btn_NextKuis);
         pertanyaanTexview = view.findViewById(R.id.soal);
         ansRadioGroup = view.findViewById(R.id.radioGroup1);
@@ -70,50 +87,35 @@ public class Kuis_frag extends Fragment {
         //Randomed Question and Answer
         int length = pertanyaan.length;
         for (int j = 0; j < length; j++){
-            quiz.add(new QnA_Model(pertanyaan[j], jawaban[j], listpengacau.subList(j * 3, (j + 1) * 3)));
+            quiz.add(new QnA_Model(arrayimage[j], pertanyaan[j], jawaban[j], listpengacau.subList(j * 3, (j + 1) * 3)));
             Collections.shuffle(quiz);
         }
 
         //Fill the Question and Answer
-        fillInQuestion();
+        fillInQuestion1();
+        posisiPertanyaan++;
 
         //Button next clicked
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int selectedId = ansRadioGroup.getCheckedRadioButtonId();
-                int maxsoal = 2;
+                int maxsoal = 5;
                 String jawaban_user = ((RadioButton) ansRadioGroup.findViewById(selectedId)).getText().toString();
-                for (int i = 0; i < maxsoal; i++) {
-                        if (jawaban[i].equals(jawaban_user)){
+                    for (int i = 0; i < jawaban.length; i++){
+                        if (jawaban_user.trim().toLowerCase().equals(jawaban[i].trim().toLowerCase())) {
                             Bscore = Bscore + 10;
-                            if (maxsoal > posisiPertanyaan) {
-                                //Fill the Question and Answer - update method
-                                fillInQuestion_update();
-                            } else {
-                                //Passing Data
-                                Bundle bundle = new Bundle();
-                                bundle.putInt("score", Bscore);
-                                score_frag = new Score_frag();
-                                score_frag.setArguments(bundle);
-
-                                //Fragment Transition
-                                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                                fragmentTransaction.replace(R.id.container, score_frag);
-                                fragmentTransaction.addToBackStack(null);
-                                fragmentTransaction.commit();
-                            }
-                    } else {
-                            Bscore = Bscore + 0;
-                            if (maxsoal > posisiPertanyaan) {
-                                //Fill the Question and Answer - update method
-                                fillInQuestion_update();
-                            } else {
-                                //Passing Data
-                                Bundle bundle = new Bundle();
-                                bundle.putInt("score", Bscore);
-                                score_frag = new Score_frag();
-                                score_frag.setArguments(bundle);
+                        }
+                    }
+                    for (int i = 0; i < maxsoal; i++) {
+                                if (maxsoal > posisiPertanyaan) {
+                                    //Fill the Question and Answer - update method
+                                    fillInQuestion1();
+                                    } else {
+                                            Bundle bundle = new Bundle();
+                                            bundle.putInt("score", Bscore);
+                                            score_frag = new Score_frag();
+                                            score_frag.setArguments(bundle);
 
                                 //Fragment Transition
                                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
@@ -122,33 +124,18 @@ public class Kuis_frag extends Fragment {
                                 fragmentTransaction.commit();
                             }
                     }
+                    posisiPertanyaan++;
                     System.out.println(posisiPertanyaan);
+                    System.out.println(Bscore);
+                System.out.println(jawaban_user);
                 }
-                posisiPertanyaan++;
-                System.out.println(Bscore);
-            }
         });
         return view;
-    }
+        }
 
-    private void fillInQuestion() {
+    private void fillInQuestion1() {
         QnA_Model qnA_model = quiz.get(posisiPertanyaan);
-        pertanyaanTexview.setText(qnA_model.pertanyaan);
-
-        //Set semua jawaban
-        int count = ansRadioGroup.getChildCount();
-        for (int j = 0; j < count; j++)
-            ((RadioButton) ansRadioGroup.getChildAt(j)).setText(qnA_model.semuaJawaban.get(j));
-
-        // Restore selected answer if exists otherwise clear previous question's choice
-        if(qnA_model.selectedId > -1)
-            ansRadioGroup.check(qnA_model.selectedId);
-        else
-            ansRadioGroup.clearCheck();
-    }
-
-    private void fillInQuestion_update() {
-        QnA_Model qnA_model = quiz.get(posisiPertanyaan+1);
+        gambarpertanyaan.setImageResource(qnA_model.gambar);
         pertanyaanTexview.setText(qnA_model.pertanyaan);
 
         //Set semua jawaban

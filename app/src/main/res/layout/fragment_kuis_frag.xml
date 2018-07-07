@@ -18,6 +18,7 @@
         android:orientation="vertical"
         android:gravity="center">
         <ImageView
+            android:id="@+id/pertanyaan_gambar"
             android:layout_width="@dimen/quiz_img_size"
             android:layout_height="@dimen/quiz_img_size"
             android:background="@mipmap/icon_round"

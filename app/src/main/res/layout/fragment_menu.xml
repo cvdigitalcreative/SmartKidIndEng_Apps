@@ -10,7 +10,12 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
     <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
         android:layout_width="400px"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -42,6 +47,18 @@
             android:background="@drawable/btn_anggota_tubuh"/>
         <Button
             android:layout_marginBottom="-10dp"
+            android:id="@+id/btn_warna"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_warna"/>
+        <Button
+            android:layout_marginBottom="-10dp"
+            android:id="@+id/btn_transportasi"
+            android:layout_width="@dimen/btn_menus_size_width"
+            android:layout_height="@dimen/btn_menus_size_height"
+            android:background="@drawable/btn_transportasi"/>
+        <Button
+            android:layout_marginBottom="-10dp"
             android:id="@+id/btn_benda"
             android:layout_width="@dimen/btn_menus_size_width"
             android:layout_height="@dimen/btn_menus_size_height"
@@ -52,4 +69,5 @@
             android:layout_height="@dimen/btn_menus_size_height"
             android:background="@drawable/btn_kuis"/>
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>
