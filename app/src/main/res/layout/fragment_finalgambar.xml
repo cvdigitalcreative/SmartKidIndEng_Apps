@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/menu_submenua3"
-    tools:context="com.digitalcreative.smartkidsindeng.Entity.Finalgambar_Frag">
+    tools:context="com.digitalcreative.smartkidsindeng.Boundary.Finalgambar_Frag">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:id="@+id/btn_suaraindo"
                 android:layout_width="360px"
                 android:layout_height="180px"
-                android:background="@drawable/btn_suara"/>
+                android:background="@drawable/suara_indo"/>
         </LinearLayout>
 
         <LinearLayout
@@ -83,7 +83,7 @@
                 android:id="@+id/btn_suarainggris"
                 android:layout_width="360px"
                 android:layout_height="180px"
-                android:background="@drawable/btn_suara"/>
+                android:background="@drawable/suara_inggris"/>
         </LinearLayout>
         </LinearLayout>
 

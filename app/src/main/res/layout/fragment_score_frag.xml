@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/quiz_background"
-    tools:context="com.digitalcreative.smartkidsindeng.Controler.Score_frag">
+    tools:context="com.digitalcreative.smartkidsindeng.Boundary.Score_frag">
 
     <include
         android:id="@+id/toolbar"
@@ -27,6 +27,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:background="@color/colorPrimary">
             <TextView
                 android:id="@+id/score"
@@ -34,10 +35,158 @@
                 android:layout_height="match_parent"
                 android:padding="30px"
                 android:textColor="#fff"
-                android:textSize="220px"
+                android:textSize="150px"
                 android:gravity="center"
                 android:text="000"/>
         </LinearLayout>
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:background="#ef3893d1"
+            android:text="Hasil Kuis"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:textStyle="italic|bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7dffffff"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/soaljawab1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jawab1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/pertama"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7dffffff"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/soaljawab2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jawab2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/kedua"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7dffffff"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/soaljawab3"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jawab3"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/ketiga"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7dffffff"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/soaljawab4"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jawab4"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/keempat"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7dffffff"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/soaljawab5"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jawab5"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/kelima"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

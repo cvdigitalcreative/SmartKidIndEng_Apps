@@ -8,7 +8,7 @@
     android:layout_marginTop="-20dp"
     tools:context="com.digitalcreative.smartkidsindeng.Controler.Kuis_frag">
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbars"
         layout="@layout/toolbar" />
 
     <!-- TODO: Update blank fragment layout -->
@@ -21,7 +21,6 @@
             android:id="@+id/pertanyaan_gambar"
             android:layout_width="@dimen/quiz_img_size"
             android:layout_height="@dimen/quiz_img_size"
-            android:background="@mipmap/icon_round"
             android:layout_margin="40px"
             />
         <TextView

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/menu_submenua3"
-    tools:context="com.digitalcreative.smartkidsindeng.Entity.Pilihgambar_Frag">
+    tools:context="com.digitalcreative.smartkidsindeng.Boundary.Pilihgambar_Frag">
 
     <!-- TODO: Update blank fragment layout -->
 

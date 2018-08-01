@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.digitalcreative.smartkidsindeng.Entity.Finalgambar_Frag;
+import com.digitalcreative.smartkidsindeng.Boundary.Finalgambar_Frag;
 import com.digitalcreative.smartkidsindeng.Model.Model;
 import com.digitalcreative.smartkidsindeng.R;
 

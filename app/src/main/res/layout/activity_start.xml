@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/container"
     android:background="@drawable/start_bacnground480x800"
-    tools:context="com.digitalcreative.smartkidsindeng.StartActivity">
+    tools:context="com.digitalcreative.smartkidsindeng.Boundary.StartActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
