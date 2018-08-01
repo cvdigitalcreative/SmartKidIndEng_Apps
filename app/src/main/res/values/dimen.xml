@@ -2,7 +2,7 @@
 <resources>
     <dimen name="size_finalgambar">700px</dimen>
     <dimen name="size_scorebox">400px</dimen>
-    <dimen name="btn_menus_size_width">400px</dimen>
-    <dimen name="btn_menus_size_height">180px</dimen>
+    <dimen name="btn_menus_size_width">300px</dimen>
+    <dimen name="btn_menus_size_height">150px</dimen>
     <dimen name="quiz_img_size">500px</dimen>
 </resources>
